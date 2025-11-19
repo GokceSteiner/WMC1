@@ -6,7 +6,7 @@
     --secondary-color: rgb(33, 37, 41);
 }
 
-.slide_wrapper 
+.slide_wrapper, .slide_wrapper1
 {
     width: 60% ;
     border: 1px solid white;
@@ -15,6 +15,8 @@
     position: relative;
     bottom:0;
 }
+
+
 .slide_weiter
 {
   right: 30px;
@@ -45,8 +47,8 @@
  display: none; 
 }
 
-.slide_sichtbar{
-    display:block;
+.slide_sichtbar, .slide_sichtbar1{
+    display:grid;
 }
 
 .slide_paar >img 
