@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let slide=document.querySelectorAll(".slide_paar");
+    /*let slide=document.querySelectorAll(".slide_paar");
     let weieter =document.querySelector(".slide_weiter");
-    let zuruck =document.querySelector(".slide_zuruck");
+    let zuruck =document.querySelector(".slide_zuruck");*/
     const first_slides = document.querySelectorAll(".slide_wrapper .slide_paar");
     const second_slides = document.querySelectorAll(".slide_wrapper1 .slide_paar");
     const first_weieter =document.querySelector(".slide_wrapper .slide_weiter");
-    const second_weieter =document.querySelector(".slidewrapper1 .slide_weiter");
-    const first_zuruck =document.querySelector(".slidewrapper .slide_zuruck");
-    const second_zuruck =document.querySelector(".slidewrapper1 .slide_zuruck");
+    const second_weieter =document.querySelector(".slide_wrapper1 .slide_weiter");
+    const first_zuruck =document.querySelector(".slide_wrapper .slide_zuruck");
+    const second_zuruck =document.querySelector(".slide_wrapper1 .slide_zuruck");
 
 
     console.log(first_slides);

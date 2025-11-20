@@ -47,7 +47,7 @@
  display: none; 
 }
 
-.slide_sichtbar, .slide_sichtbar1{
+.slide_sichtbar,.slide_sichtbar1{
     display:grid;
 }
 
