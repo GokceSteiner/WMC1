@@ -1,7 +1,7 @@
 :root
 
 {
-    --background-color: rgb(246, 246, 239);
+    --background-color: rgb(139, 195, 218);
     --primary-color: rgb(0, 123, 255);
     --secondary-color: rgb(33, 37, 41);
 }
@@ -28,14 +28,30 @@
   left: 30px;
 }
 
-@media(max-width-1000px){
+@media(max-width-1000px)
+{
   .slide_text, .slide_weiter, .slide_zuruck
   {font-size: 1em;}
 }
 
-@media(max-width-600px){
-  .slide_wrapper
-  {width: 85%;}
+@media(max-width-600px)
+{
+  .slide_text, .slide_weiter, .slide_zuruck
+  {font-size: 0.2em;}
+}
+
+@media(max-width-600px)
+{
+  p.ende
+  {font-size:auto;
+    padding:5px;
+  }
+}
+
+@media(max-width-600px)
+{
+  .slide_wrapper, footer
+  {width: 75%;}
 }
 @media(min-width:900px){
   .slide_weiter:hover, .slide_zuruck:hover
@@ -56,7 +72,7 @@
 
 .slide_paar >img 
 {
-    width: auto;
+    width: 100%;
     height:auto;
     display:block;
     margin-left: auto;
@@ -102,11 +118,14 @@ div.scrollmenu a {
   text-align: center;
   padding: 20px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 div.scrollmenu a:hover {
-  background-color: #f7f8f6;
+  background-color: #b3b3de;
+  transition: var(--background-color) 3s;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 header 
@@ -119,7 +138,7 @@ header
 h1
 {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     color: rgb(0, 64, 255);
 }
 
@@ -128,13 +147,13 @@ h2
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     color: rgb(13, 13, 13);
 }
 
 p
 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 body 
@@ -146,12 +165,27 @@ body
 
 .body
 {
- align-content: stretch;
+ align-content: center;
 }
 
 footer
 {
   margin-top: 150px;
+  border: 2px dotted blueviolet;
+  text-align: center;
+  font-size: 2em;
+}
+
+footer:hover
+{
+    background-color: pink;
+    transition: var(--background-color) 3s;
+}
+
+
+footer > p {
+  font-size: 40px;
+  text-size-adjust: auto;
 }
 
 img
