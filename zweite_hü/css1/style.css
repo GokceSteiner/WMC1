@@ -1,0 +1,62 @@
+:root
+
+{
+    --background-color: white;
+    --primary-color: rgb(0, 123, 255);
+    --secondary-color: rgb(33, 37, 41);
+}
+
+*, *::before, *::after 
+{
+    box-sizing: border-box;
+}
+
+.container
+{
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    align-content: space-around;
+    gap:50px;
+    padding:60px;
+}
+
+.fotome
+{
+    max-width: 450px;
+    width:80%;
+    margin: auto;
+    align-self:start;
+}
+
+.ichbin
+{
+    background-color: #136c72;
+    border-radius: 100px;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.ichbin p
+{
+    line-height: 1.6;
+}
+
+.kontakt
+{
+    color:  #136c72 ;
+    font-size: 1.5rem;
+    padding:10px;
+
+}
+
+.maps
+{
+   align-self: flex-start;
+   margin: auto;
+}
