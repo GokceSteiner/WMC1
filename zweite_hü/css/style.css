@@ -305,11 +305,18 @@ h2
     text-align: center;
     font-size: 1.5rem;
     color: blue;
+    
+}
+
+h2 a
+{
+  text-decoration: none;
+  color:inherit;
 }
 
 p
 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   text-align: justify;
 }
