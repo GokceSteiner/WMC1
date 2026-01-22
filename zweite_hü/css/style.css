@@ -37,8 +37,8 @@
 {
     width: 80%;
     height: 70%;
-    max-width:600px;
-    max-height: 400px;
+    max-width:800px;
+    max-height: 700px;
     border: 1px solid white;
     margin: 50px auto 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -91,11 +91,7 @@
 
 @media(max-width:600px){
 
-  .nav_liste
-  {
-    flex-wrap: wrap;
-    align-items: center;
-  }
+ 
   p, h1, h2
   {text-align: left;
    margin-left: 0; 
@@ -112,6 +108,7 @@
     font-size: 0.5rem;
     line-height: 1;
   }
+
   slide_paar>img
   {
     
@@ -121,23 +118,50 @@
     margin: 20px auto;
     display:block;
   }
-  div.scrollmenu {
+
+  .nav_liste
+   
+   {
     background-color: rgba(250, 250, 248, 0.9);
     display: flex;
-    overflow-x: auto;                
-    white-space: nowrap;
-    gap: 10px;
+    flex-wrap: wrap;
+    /*overflow-x: auto;*/              
+    gap: 1px;
     padding: 10px 12px;
+    margin:0;
     -webkit-overflow-scrolling: touch; 
+    box-sizing: border-box;
+    width: 100%;
   }
 
-  div.scrollmenu a {
-    flex: 0 0 auto;                  
-    font-size: 16px;                  
-    padding: 8px 14px;
-    border-radius: 20px;
-    text-align: center;
+  .nav__item
+  {
+    flex: 1 1 auto;
+    min-width:0;
   }
+
+  .nav_link
+  {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+
+    padding: 8px 10px;
+    font-size: 0.7rem;
+  }
+
+  /*.nav_link
+  {
+    flex: 1 1 auto;
+    min-width:0;                  
+    font-size: 14px;                  
+    padding: 8px 14px;
+    border-radius: 2px;
+    text-align: center;
+    white-space: nowrap;
+  }*/
+
+
   image
   {
     width: 80%;
@@ -168,7 +192,7 @@
 {
     width: 80%;
     height: 70%;
-    max-width:500px;
+    max-width:700px;
     max-height: 300px;
     height:auto;
     display:block;
@@ -185,7 +209,9 @@
 .slide_text 
 {
     font-size: 1rem;
-    color: rgb(33, 37, 41);
+    font-family: Arial, sans-serif;
+    color: purple;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     border-top: 1px solid white;
@@ -201,6 +227,11 @@
   transition:0.5s;
 }
 
+.nav
+{
+  border-bottom: 2px solid blue;
+   
+}
 
 
 .nav_liste
@@ -209,6 +240,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+ 
 }
 
 .nav_liste .nav__item
@@ -272,7 +304,7 @@ h2
     padding-bottom: 20px;
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(13, 13, 13);
+    color: blue;
 }
 
 p
@@ -301,15 +333,18 @@ body
 footer
 {
   margin-top: 150px;
-  border: 2px dotted blueviolet;
+  border: 2px dotted blue;
   text-align: center;
   font-size: 1rem;
 }
 
 footer:hover
 {
-    background-color: lightsalmon;
+    background-color: lightskyblue;
     transition: var(--background-color) 3s;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:blue;
 }
 
 
@@ -343,7 +378,9 @@ div.video>iframe
     margin-top: 30px;
     margin-bottom: 10px;  
     max-width: 1000px;
-    width: 75%;
+    max-height: 800px;
+    width: 73%;
+    height: 50%;
     border:none; 
     
 }

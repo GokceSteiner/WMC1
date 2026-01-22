@@ -11,6 +11,14 @@
     box-sizing: border-box;
 }
 
+body
+{
+    border: 20px solid #136c72;
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
 .container
 {
     max-width: 1100px;
@@ -28,16 +36,18 @@
 
 .fotome
 {
-    max-width: 450px;
+    max-width: 500px;
     width:80%;
     margin: auto;
     align-self:start;
+    border-radius: 10px;
+    border:20px solid #87629A
 }
 
 .ichbin
 {
     background-color: #136c72;
-    border-radius: 100px;
+    /*border-radius: 100px;*/
     color:white;
     font-size: 1.5rem;
 }
@@ -49,14 +59,66 @@
 
 .kontakt
 {
+    
+    border-radius:100px;
     color:  #136c72 ;
     font-size: 1.5rem;
-    padding:10px;
+    font-style: oblique;
+    font-weight: bold;
+    padding:1px;
+    line-height: 1.6;
 
+}
+
+.kontakt h2
+{
+    color:#87629A;
 }
 
 .maps
 {
    align-self: flex-start;
    margin: auto;
+}
+
+@media(max-width:800px)
+{
+
+    .row
+    {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .fotome
+    {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        align-self: flex-start;
+    }
+    .maps
+    {
+       width: 80%;
+       height: 350px;
+    }
+
+    .ichbin_text, .kontakt_text
+    {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .fotome
+    {
+        border:none;
+    }
+
+    .kontakt
+    {
+        min-width: 0;
+    }
 }
